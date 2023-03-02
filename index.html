@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+        <script>
+    
+        const firebaseConfig = {
+        apiKey: "AIzaSyAxYP_eKS_dx6C3UZD7bSrGlP1Ysf9OMtA",
+        authDomain: "chat-app-ff298.firebaseapp.com",
+        databaseURL: "https://chat-app-ff298-default-rtdb.firebaseio.com",
+        projectId: "chat-app-ff298",
+        storageBucket: "chat-app-ff298.appspot.com",
+        messagingSenderId: "820718638106",
+        appId: "1:820718638106:web:753f56c0023bf03b73eda3"
+        };
+    
+    
+    // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    
+        </script>
+    </head>
+    <body>
+        <center>
+            <h1 class="title">Chat App</h1>
+            <h3 class="creator">Made by Reyansh Sahoo</h3>
+            <input id="username" placeholder="Enter your username">
+            <button type="text" id="joinChat" onclick="join()">Join Chat</button>
+            <div id="chat">
+            
+            </div>
+            <input readonly="true" id="message" placeholder="you must enter a username first.">
+            <button id="sendButton" onclick="send()">Send</button>
+        </center>
+        <script src="main.js" async defer></script>
+    </body>
+</html>
